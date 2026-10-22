@@ -75,12 +75,16 @@ Lagos has no official city boundary, so the population depends on which area you
 | Lagos State, state government figure | "22mn+" | Not given | [Lagos State Government](https://lagosstate.gov.ng/), viewed 21 Oct 2026 |
 | GeoNames (area not defined) | 15,388,000 | Not given | [GeoNames 2332459](https://www.geonames.org/2332459/lagos.html) |
 
-The census is the only official count, but it's from 2006. The UN figure covers only the built-up area, yet it's higher because it's 12 years later and is an estimate rather than a count. The state government and GeoNames figures give no year or method, so they can't be checked.
+The census is the only official count, but it's from 2006. The UN figure covers only the built-up area yet is higher, probably partly because it's 12 years later and is an estimate rather than a count; no source here reconciles the two. The state government and GeoNames figures give no year or method, so they can't be checked.
 
 ## Coverage notes
 
-Anything that will affect data coverage: for example, few monitoring stations, a large informal settlement area, or a boundary change.
+- **No city boundary.** Datasets may use the city point (OSM node 27565124, GeoNames 2332459) or the whole of Lagos State (OSM relation 3718182). Results will differ a lot depending on which one is used.
+- **City and state get mixed up.** Version 26 of OSM relation 3718182 removed a `place=city` tag from the state boundary, which shows the two being confused in the data itself ([relation history](https://www.openstreetmap.org/relation/3718182/history)).
+- **Population figures are old or unverifiable.** The only official count is the 2006 census; other figures are estimates or have no year or method (see Competing definitions).
+- **Sub-state units may have changed.** The 20 LGAs are fixed in the Constitution, but the LCDA count (37 in 2010) may have changed, so any data split by LCDA should be checked against a current list.
+- **Not researched:** air-quality monitoring stations and informal settlement areas. These should be checked before using Lagos in coverage-sensitive analysis.
 
 ## Researched by
 
-GitHub handle and date.
+[@Rilexx90](https://github.com/Rilexx90), 22 October 2026
